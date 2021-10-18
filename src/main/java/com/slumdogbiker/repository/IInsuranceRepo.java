@@ -6,6 +6,11 @@ import org.springframework.stereotype.Repository;
 import com.slumdogbiker.model.Insurance;
 
 @Repository
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IInsuranceRepo extends JpaRepository<Insurance, Integer> {
 
 }

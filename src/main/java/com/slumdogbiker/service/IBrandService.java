@@ -3,7 +3,11 @@ package com.slumdogbiker.service;
 import java.util.List;
 
 import com.slumdogbiker.model.Brand;
-
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IBrandService {
 	
 	public Brand addBrand(Brand brand);

@@ -7,6 +7,11 @@ import com.slumdogbiker.model.Plan;
 import com.slumdogbiker.repository.IPlanRepo;
 
 @Service
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class PlanServiceImpl implements IPlanService {
 	@Autowired
 	IPlanRepo planRepo;

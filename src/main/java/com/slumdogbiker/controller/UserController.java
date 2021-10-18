@@ -17,6 +17,11 @@ import com.slumdogbiker.service.IBikeService;
 
 @RestController
 @RequestMapping("/bikes-service")
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class UserController {
 	
 	@Autowired

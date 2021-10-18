@@ -2,6 +2,11 @@ package com.slumdogbiker.service;
 
 import com.slumdogbiker.model.Insurance;
 
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IInsuranceService {
 
 	public Insurance addInsurance(Insurance insurance);

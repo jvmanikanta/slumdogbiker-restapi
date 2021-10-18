@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import com.slumdogbiker.model.Brand;
 import com.slumdogbiker.repository.IBrandRepo;
 @Service
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class BrandServiceImpl implements IBrandService {
 	
 	@Autowired

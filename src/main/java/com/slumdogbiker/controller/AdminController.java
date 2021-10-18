@@ -15,6 +15,11 @@ import com.slumdogbiker.service.IBikeService;
 
 @RestController
 @RequestMapping("/admin-service")
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class AdminController {
 	
 	@Autowired

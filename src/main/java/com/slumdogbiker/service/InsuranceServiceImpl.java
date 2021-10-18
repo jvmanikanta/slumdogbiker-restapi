@@ -7,6 +7,11 @@ import com.slumdogbiker.model.Insurance;
 import com.slumdogbiker.repository.IInsuranceRepo;
 
 @Service
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class InsuranceServiceImpl implements IInsuranceService {
 	@Autowired
 	IInsuranceRepo insuranceRepo;

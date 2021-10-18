@@ -26,6 +26,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString 
 @Entity
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class Plan {
 	@Id
 	@GeneratedValue(generator="plan_gen",strategy=GenerationType.AUTO)

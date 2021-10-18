@@ -10,6 +10,11 @@ import org.springframework.stereotype.Repository;
 import com.slumdogbiker.model.Bike;
 
 @Repository
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IBikeRepo extends JpaRepository<Bike, Integer> {
 	
 	List<Bike> findByBrandName(String brandName);

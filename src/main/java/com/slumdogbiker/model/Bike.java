@@ -30,6 +30,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class Bike {
 	@Id
 	@GeneratedValue(generator="bike_gen",strategy=GenerationType.AUTO)
@@ -39,7 +44,6 @@ public class Bike {
 	private String model;
 	private double pricePerDay;
 	private LocalDate availableFrom;
-	//private LocalDate endDate;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="insurance_id")

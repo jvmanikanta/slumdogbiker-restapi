@@ -13,6 +13,11 @@ import com.slumdogbiker.repository.IBikeRepo;
 import com.slumdogbiker.repository.IPlanRepo;
 
 @Service
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class BikeServiceImpl implements IBikeService {
 	
 	@Autowired

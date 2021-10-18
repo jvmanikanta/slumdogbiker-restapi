@@ -4,7 +4,11 @@ import java.util.List;
 
 import com.slumdogbiker.exceptions.BikeNotFoundException;
 import com.slumdogbiker.model.Bike;
-
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IBikeService {
 	public Bike addBike(Bike bike);
 	public void deleteBike(int bikeId);

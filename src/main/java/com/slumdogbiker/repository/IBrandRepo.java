@@ -8,6 +8,11 @@ import org.springframework.stereotype.Repository;
 import com.slumdogbiker.model.Brand;
 
 @Repository
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public interface IBrandRepo extends JpaRepository<Brand, Integer> {
 	
 	Brand findByName(String name);

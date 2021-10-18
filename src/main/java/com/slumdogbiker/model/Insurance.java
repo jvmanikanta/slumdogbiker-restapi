@@ -22,6 +22,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Entity
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class Insurance {
 	@Id
 	@GeneratedValue(generator="insurance_gen",strategy=GenerationType.AUTO)

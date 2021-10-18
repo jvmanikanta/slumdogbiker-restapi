@@ -18,6 +18,11 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import com.slumdogbiker.model.ApiErrors;
 
 @ControllerAdvice
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	
 	@ExceptionHandler(BikeNotFoundException.class)

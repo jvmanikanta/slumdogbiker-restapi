@@ -1,5 +1,10 @@
 package com.slumdogbiker.exceptions;
 
+/**
+ * 
+ * @author ManikantaJV
+ *
+ */
 public class BikeNotFoundException extends RuntimeException {
 
 	/**
