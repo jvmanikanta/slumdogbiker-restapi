@@ -29,38 +29,38 @@ public class UserController {
 
 	
 	@GetMapping("/bikes")
-	public List<Bike> viewAllBikes() {
-		return bikeService.getAll();
+	public ResponseEntity<List<Bike>> viewAllBikes() {
+		return ResponseEntity.ok(bikeService.getAll());
 	}
 	
 	@GetMapping("/bikes/bikeId/{bikeId}")
-	public Bike getBikeById(@PathVariable("bikeId")int bikeId) {
-		return bikeService.getById(bikeId);
+	public ResponseEntity<Bike> getBikeById(@PathVariable("bikeId")int bikeId) {
+		return ResponseEntity.ok(bikeService.getById(bikeId));
 	}
 	
 	@GetMapping("/bikes/brand/{brand}")
-	public List<Bike> getBikeByBrand(@PathVariable("brand")String brand){
-		return bikeService.getBikesByBrand(brand);
+	public ResponseEntity<List<Bike>> getBikeByBrand(@PathVariable("brand")String brand){
+		return ResponseEntity.ok(bikeService.getBikesByBrand(brand));
 	}
 	
 	@GetMapping("/bikes/price/{price}")
-	public List<Bike> getBikeByPrice(@PathVariable("price")double price) {
-		return bikeService.getBikeByLessPrice(price);
+	public ResponseEntity<List<Bike>> getBikeByPrice(@PathVariable("price")double price) {
+		return ResponseEntity.ok(bikeService.getBikeByLessPrice(price));
 	}
 	
 	@GetMapping("/bikes/price/{price}/brand/{brand}")
-	public List<Bike> getBikeByPriceAndBrand(@PathVariable("price")double price,@PathVariable("brand")String brand) {
-		return bikeService.getBikesByLessPriceAndBrand(price, brand);
+	public ResponseEntity<List<Bike>> getBikeByPriceAndBrand(@PathVariable("price")double price,@PathVariable("brand")String brand) {
+		return ResponseEntity.ok(bikeService.getBikesByLessPriceAndBrand(price, brand));
 	}
 	
 	@GetMapping("/bikes/model/{model}/plan/{plan}")
-	public List<Bike> getBikeByModelAndPlan(@PathVariable("model")String model,@PathVariable("plan")String plan){
-		return bikeService.getBikesBymodelAndPlan(model, plan);
+	public ResponseEntity<List<Bike>> getBikeByModelAndPlan(@PathVariable("model")String model,@PathVariable("plan")String plan){
+		return ResponseEntity.ok(bikeService.getBikesBymodelAndPlan(model, plan));
 	}
 	
 	@GetMapping("bikes/book/bikeId/{bikeId}/planId/{planId}")
-	public String bookBike(@PathVariable("bikeId")int bikeId, @PathVariable("planId")int planId){
-		return bikeService.bookBike(bikeId, planId);
+	public ResponseEntity<String> bookBike(@PathVariable("bikeId")int bikeId, @PathVariable("planId")int planId){
+		return ResponseEntity.ok(bikeService.bookBike(bikeId, planId));
 	}
 	
 }
